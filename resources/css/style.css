@@ -1,0 +1,327 @@
+/* Universal styles */
+
+html {
+  font-size: 16px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  color: white;
+  text-decoration: none;
+}
+
+h1, h2 {
+  font-size: 4rem;
+  font-family: 'Francois One', sans-serif;
+}
+
+span {
+  font-family: 'Open Sans', sans-serif;
+  font-color: darkgray;
+}
+
+/* Navigation */
+
+.navigation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 3.5rem;
+  background-color: tan;
+  font-size: 1.2rem;
+  color: white;
+  font-family: 'Francois One', sans-serif;
+}
+
+.navigation ul {
+  display: flex;
+  flex-direction: row;
+  margin-right: 1rem;
+}
+
+.navigation li {
+  margin: 0.7rem;
+}
+
+.navigation a {
+  border: 1px solid white;
+  padding: 0.5rem;
+}
+
+.navigation a:hover {
+  color: white;
+  background-color: blue;
+}
+
+.branding {
+  margin-left: 1rem;
+  font-size: 2rem;
+}
+
+@media only screen and (max-width: 800px) {
+  .navigation {
+    height: 2rem;
+    flex-direction: column;
+    font-size: 1rem;
+  }
+
+  .navigation ul {
+    margin: 0;
+    display: none;
+  }
+
+  .branding {
+    font-size: 1.4rem;
+    margin-top: 0.3rem;
+    margin-left: 0;
+  }
+}
+
+/* Banner */
+
+.banner {
+  height: 38rem;
+  background-image: url('../images/banner.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
+  color: white;
+}
+
+.banner.text h1 {
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+  background-color: tan;
+  padding: 0.8rem 4rem 0.8rem 4rem;
+}
+
+.banner.text h2 {
+  font-size: 2.5rem;
+  background-color: tan;
+  padding: 0.8rem 4rem 0.8rem 4rem;
+  margin-bottom: 4rem;
+}
+
+@media only screen and (max-width: 800px) {
+  .banner.text h1 {
+    font-size: 2.5rem;
+  }
+
+  .banner.text h2 {
+    font-size: 1.3rem;
+    text-align: center;
+  }
+}
+
+/* About */
+
+.about h1 {
+  text-align: center;
+  margin-top: 2rem;
+  color: tan;
+}
+
+.about img {
+  height: 28rem;
+}
+
+.sections {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin: 2rem 13rem 0 13rem;
+}
+
+.section {
+  width: 40%
+}
+
+.section span {
+  font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 900px) {
+  .about img {
+    height: 23rem;
+    margin-top: 1.5rem;
+    margin-bottom: 1.5rem;
+  }
+
+  .sections {
+    flex-direction: column;
+    margin: 0;
+    justify-content: center;
+  }
+
+  .section {
+    width: 80%;
+    text-align: center;
+  }
+
+  .section span {
+    font-size: 1rem;
+  }
+}
+
+/* Values */
+
+.values h1 {
+  text-align: center;
+  color: tan;
+  margin-top: 2rem;
+  width: 100%;
+}
+
+.boxes {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  margin-top: 2rem;
+}
+
+.box {
+  display: flex;
+  flex-direction: column;
+  width: 30%;
+}
+
+.box img {
+  width: 100%;
+  height: 20rem;
+}
+
+.box img:hover {
+  opacity: 0.7;
+}
+
+.box span {
+  text-align: center;
+  margin-top: 1.6rem;
+  font-size: 1.5rem;
+}
+
+@media only screen and (max-width: 900px) {
+  .values {
+    width: 100%;
+  }
+
+  .boxes {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .box {
+    width: 60%;
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* Tribe */
+
+.tribe {
+  margin-top: 2rem;
+  height: 28rem;
+  background-image: url('../images/join_tribe.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.tribe.text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  color: white;
+}
+
+.tribe.text h1 {
+  font-size: 4rem;
+  margin-bottom: 1.5rem;
+  background-color: tan;
+  padding: 0.8rem 4rem 0.8rem 4rem;
+}
+
+.tribe.text h2 {
+  font-size: 2.5rem;
+  background-color: black;
+  color: tan;
+  margin-bottom: 4rem;
+  text-align: center;
+  padding: 0.8rem 4rem 0.8rem 4rem;
+  border: 1px solid black;
+}
+
+.tribe.text a {
+  padding: 0.8rem 4rem 0.8rem 4rem;
+}
+
+.tribe.text h2:hover {
+  color: black;
+  background-color: gray;
+  border: 1px solid black;
+  padding: 0.8rem 4rem 0.8rem 4rem;
+}
+
+@media only screen and (max-width: 600px) {
+  .tribe {
+    height: 18rem;
+  }
+
+  .tribe.text {
+    justify-content: center;
+  }
+
+  .tribe.text h1 {
+    font-size: 1.7rem;
+  }
+
+  .tribe.text h2 {
+    font-size: 1.5rem;
+  }
+}
+
+/* Footer */
+
+footer {
+  background-color: tan;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 2rem;
+}
+
+footer ul {
+  display: flex;
+  flex-direction: row;
+}
+
+footer li {
+  margin: 1rem;
+  font-size: 1.5rem;
+  font-family: 'Francois one', sans-serif;
+  border: 1px solid white;
+  padding: 0.8rem;
+}
+
+footer li:hover {
+  background-color: gray;
+}
+
+footer span {
+  color: white;
+  margin: 1rem;
+}
