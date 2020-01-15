@@ -23,9 +23,9 @@ span {
   font-color: darkgray;
 }
 
-/* Navigation */
+/* Header */
 
-.navigation {
+header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -37,22 +37,22 @@ span {
   font-family: 'Francois One', sans-serif;
 }
 
-.navigation ul {
+header ul {
   display: flex;
   flex-direction: row;
   margin-right: 1rem;
 }
 
-.navigation li {
+header li {
   margin: 0.7rem;
 }
 
-.navigation a {
+header a {
   border: 1px solid white;
   padding: 0.5rem;
 }
 
-.navigation a:hover {
+header a:hover {
   color: white;
   background-color: blue;
 }
@@ -63,13 +63,13 @@ span {
 }
 
 @media only screen and (max-width: 800px) {
-  .navigation {
+  header {
     height: 2rem;
     flex-direction: column;
     font-size: 1rem;
   }
 
-  .navigation ul {
+  header ul {
     margin: 0;
     display: none;
   }
