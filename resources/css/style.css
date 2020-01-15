@@ -23,6 +23,15 @@ span {
   font-color: darkgray;
 }
 
+.text-shadow {
+  text-shadow: 2px 2px gold;
+}
+
+.gold-image-outline {
+  outline: 5px solid gold;
+  outline-offset: 2rem;
+}
+
 /* Header */
 
 header {
@@ -126,22 +135,29 @@ header a:hover {
 
 /* About */
 
+.about {
+  background-color: lightblue;
+}
+
 .about h1 {
   text-align: center;
-  margin-top: 2rem;
+  padding: 2rem 0 4rem 0;
   color: tan;
+
 }
 
 .about img {
   height: 28rem;
+  padding-bottom: 1rem;
 }
 
 .sections {
+  width: 65%;
+  margin: 0 auto;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
   align-items: center;
-  margin: 2rem 13rem 0 13rem;
 }
 
 .section {
@@ -149,29 +165,30 @@ header a:hover {
 }
 
 .section span {
-  font-size: 1.5rem;
+  font-size: 1.3rem;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1031px) {
   .about img {
-    height: 23rem;
     margin-top: 1.5rem;
     margin-bottom: 1.5rem;
   }
 
   .sections {
     flex-direction: column;
-    margin: 0;
     justify-content: center;
+    align-items: center;
   }
 
-  .section {
+  .section.words {
     width: 80%;
     text-align: center;
+    background-color: transparent;
+    margin-top: 1.5rem;
   }
 
   .section span {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
 }
 
@@ -180,7 +197,7 @@ header a:hover {
 .values h1 {
   text-align: center;
   color: tan;
-  margin-top: 2rem;
+  margin: 4rem 0 4rem 0;
   width: 100%;
 }
 
@@ -188,19 +205,20 @@ header a:hover {
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-  width: 100%;
+  width: 90%;
   margin-top: 2rem;
+  margin: 0 auto;
 }
 
 .box {
   display: flex;
   flex-direction: column;
-  width: 30%;
+  width: 25%;
 }
 
 .box img {
   width: 100%;
-  height: 20rem;
+  height: 15rem;
 }
 
 .box img:hover {
@@ -221,11 +239,19 @@ header a:hover {
   .boxes {
     flex-direction: column;
     align-items: center;
+    margin: 0 auto;
   }
 
   .box {
     width: 60%;
     margin-bottom: 1.5rem;
+    margin: 0 auto;
+
+  }
+
+  .box img {
+    width: 80%;
+    height: auto;
   }
 }
 
@@ -324,4 +350,26 @@ footer li:hover {
 footer span {
   color: white;
   margin: 1rem;
+}
+
+/* Copyright section */
+
+.copyright {
+  font-size: 0.9rem;
+  margin: 1.5rem 0 1rem 0;
+  border-top: 1px solid gray;
+  padding-top: 0.5rem;
+  text-align: center;
+  font-family:
+  }
+
+.copyright a {
+  color: white;
+  border-bottom: 3px solid lightpink;
+  padding-bottom: 0.15rem;
+}
+
+.copyright a:hover {
+  color: white;
+  background-color: black;
 }
