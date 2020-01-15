@@ -23,6 +23,10 @@ span {
   font-color: darkgray;
 }
 
+section {
+  width: 100%;
+}
+
 .text-shadow {
   text-shadow: 2px 2px gold;
 }
@@ -133,7 +137,7 @@ header a:hover {
   }
 }
 
-/* About */
+/* Blue About section */
 
 .about {
   background-color: lightblue;
@@ -143,35 +147,38 @@ header a:hover {
   text-align: center;
   padding: 2rem 0 4rem 0;
   color: tan;
-
-}
-
-.about img {
-  height: 28rem;
-  padding-bottom: 1rem;
 }
 
 .sections {
-  width: 65%;
   margin: 0 auto;
   display: flex;
   flex-direction: row;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
+  width: 90%;
 }
 
 .section {
-  width: 40%
+  width: 40%;
+}
+
+.section img {
+  width: 80%;
+  padding-bottom: 1rem;
 }
 
 .section span {
   font-size: 1.3rem;
+  width: 50%;
 }
 
 @media only screen and (max-width: 1031px) {
-  .about img {
-    margin-top: 1.5rem;
-    margin-bottom: 1.5rem;
+  .about h1 {
+    padding-bottom: 0;
+  }
+
+  .section img {
+    display: none;
   }
 
   .sections {
@@ -185,6 +192,8 @@ header a:hover {
     text-align: center;
     background-color: transparent;
     margin-top: 1.5rem;
+    padding-bottom: 1.5rem;
+
   }
 
   .section span {
@@ -193,6 +202,13 @@ header a:hover {
 }
 
 /* Values */
+
+.values {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
 
 .values h1 {
   text-align: center;
@@ -210,25 +226,13 @@ header a:hover {
   margin: 0 auto;
 }
 
-.box {
-  display: flex;
-  flex-direction: column;
+.boxes img {
   width: 25%;
 }
 
-.box img {
-  width: 100%;
-  height: 15rem;
-}
 
-.box img:hover {
+.boxes img:hover {
   opacity: 0.7;
-}
-
-.box span {
-  text-align: center;
-  margin-top: 1.6rem;
-  font-size: 1.5rem;
 }
 
 @media only screen and (max-width: 900px) {
@@ -236,29 +240,27 @@ header a:hover {
     width: 100%;
   }
 
+  .values h1 {
+    border: 1px solid black;
+
+  }
+
   .boxes {
     flex-direction: column;
     align-items: center;
-    margin: 0 auto;
   }
 
-  .box {
-    width: 60%;
-    margin-bottom: 1.5rem;
-    margin: 0 auto;
-
-  }
-
-  .box img {
-    width: 80%;
+   .boxes img {
+    width: 40%;
     height: auto;
+    margin-bottom: 1rem;
   }
 }
 
 /* Tribe */
 
 .tribe {
-  margin-top: 2rem;
+  margin-top: 1rem;
   height: 28rem;
   background-image: url('../images/join_tribe.jpg');
   background-position: center;
@@ -281,7 +283,7 @@ header a:hover {
   padding: 0.8rem 4rem 0.8rem 4rem;
 }
 
-.tribe.text h2 {
+.tribe.text button {
   font-size: 2.5rem;
   background-color: black;
   color: tan;
@@ -289,13 +291,11 @@ header a:hover {
   text-align: center;
   padding: 0.8rem 4rem 0.8rem 4rem;
   border: 1px solid black;
-}
-
-.tribe.text a {
   padding: 0.8rem 4rem 0.8rem 4rem;
+  border-radius: 60%;
 }
 
-.tribe.text h2:hover {
+.tribe.text button:hover {
   color: black;
   background-color: gray;
   border: 1px solid black;
@@ -315,7 +315,7 @@ header a:hover {
     font-size: 1.7rem;
   }
 
-  .tribe.text h2 {
+  .tribe.text button {
     font-size: 1.5rem;
   }
 }
